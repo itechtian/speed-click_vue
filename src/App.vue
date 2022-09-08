@@ -7,10 +7,11 @@
    {{count}}
     <div class="count-div">
           {{count <= 0 ? count = 0 : count}} km/s
-    </div>
+        </div>
     <div>
       <button v-on:click="count++" class="btn">{{buttonValue.increment}}</button>
       <button v-on:click="count--" class="btn">{{buttonValue.decrement}}</button>
+      <button v-on:click="count=0" class="btn">{{buttonValue.reset}}</button>
     </div>
   </div>
 </template>
@@ -28,7 +29,8 @@ export default {
         homeParagraph:"this is a paragraph, on my page.",
          buttonValue:{
              increment:'Increase',
-              decrement:'Decrease'
+              decrement:'Decrease',
+              reset: 'Reset'
          },
         count:0
 
