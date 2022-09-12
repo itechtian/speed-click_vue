@@ -10,3 +10,10 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+new Vue({
+  el: '#cnd',
+  data: {
+  show: true
+  }
+  })
